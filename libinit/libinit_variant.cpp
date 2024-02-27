@@ -14,6 +14,7 @@ using android::base::GetProperty;
 
 #define HWC_PROP "ro.boot.hwc"
 #define SKU_PROP "ro.boot.product.hardware.sku"
+#define HWSKU_PROP "ro.boot.hardware.sku"
 
 void search_variant(const std::vector<variant_info_t> variants) {
     std::string hwc_value = GetProperty(HWC_PROP, "");
@@ -39,4 +40,5 @@ void set_variant_props(const variant_info_t variant) {
 
     if (variant.nfc)
         property_override(SKU_PROP, "nfc");
+        property_override(HWSKU_PROP, variant.device, true);
 }

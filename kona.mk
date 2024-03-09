@@ -265,6 +265,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fastbootd
 
+# Fido
+PRODUCT_PACKAGES += \
+    vendor.xiaomi.hardware.mfidoca@1.0.vendor
+
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.xiaomi
@@ -364,7 +368,13 @@ PRODUCT_COPY_FILES += \
 # Mlipay
 PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.mlipay@1.1.vendor \
-    vendor.xiaomi.hardware.mtdservice@1.2.vendor
+
+# Mtd
+PRODUCT_PACKAGES += \
+    vendor.xiaomi.hardware.mtdservice@1.0.vendor \
+    vendor.xiaomi.hardware.mtdservice@1.1.vendor \
+    vendor.xiaomi.hardware.mtdservice@1.2.vendor \
+    vendor.xiaomi.hardware.mtdservice@1.3.vendor
 
 # Net
 PRODUCT_PACKAGES += \

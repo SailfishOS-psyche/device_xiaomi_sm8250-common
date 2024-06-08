@@ -3,6 +3,13 @@
 # Consumer IR
 vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.kona.so
 
+# Fido
+vendor/bin/fidoca
+vendor/etc/init/vendor.xiaomi.hardware.mfidoca@1.0-service.rc
+-vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mfidoca.xml
+vendor/lib/libmfido.so
+vendor/lib64/libmfido.so
+
 # GNSS
 vendor/bin/hw/android.hardware.gnss@2.1-service-qti
 vendor/bin/slim_daemon
@@ -33,6 +40,14 @@ vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc
 -vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mlipay.xml
 vendor/lib64/libmlipay.so
 vendor/lib64/libmlipay@1.1.so
+
+# Mtd
+vendor/bin/mtd@1.3
+vendor/etc/init/vendor.xiaomi.hardware.mtdservice@1.3-service.rc
+-vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mtdservice.xml
+vendor/lib64/libmt.so
+vendor/lib64/libmt@1.3.so
+vendor/lib64/libwvkeybox.so
 
 # Soter service (Tencent)
 -vendor/app/SoterService/SoterService.apk
